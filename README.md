@@ -34,6 +34,15 @@ In the very top row of icons alone, John can:
 - **Edit** - Edit parts of the ticket that the user may not have filled out correctly.
 - **More** - Change the owner, Mark as answered, manage referrals, and other miscellaneous tasks involving the ticket.
 
+Just below the title of the ticket, John can edit any of the clickable items and change things like the SLA, help topic of the ticket, and more.
+
+![6  more options for john](https://github.com/user-attachments/assets/4553ac16-0dcd-4cbb-a584-2bb902ddc3a0)
+
+This person did a pretty good job of filling out the support ticket and our systems settings got it to the right team, though, so John doesn't have to edit much. Let's make John write a professional replay to Accountant Maggie that will get the ball rolling on this issue. Click the "Post Reply" icon at the top of the screen or simply scroll down until you reach the text box, and write a reply to Maggie from John.
+
+![7  john's professional reply](https://github.com/user-attachments/assets/651cd38f-9f35-4c48-8b41-3a06c9940c30)
+<!-- well done, john -->
+
 
 
 
