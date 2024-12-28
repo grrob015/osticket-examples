@@ -1,6 +1,16 @@
 # osticket-examples
 Creating example tickets and showing options around day to day workflow at a helpdesk with overlapping permissions across different users.
 
+<h2>Environments and Technologies Used</h2>
+
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+- Internet Information Services (IIS)
+
+<h2>Operating Systems Used </h2>
+
+- Windows 10</b> (21H2)
+
 In this demonstration I will be showing some examples of tickets that could pop up in day-to-day operations at a business and what that would look like on the helpdesk's side of things. I will be using the osTicket webserver I created in [this demonstration](https://github.com/grrob015/osticket-setup) and the settings I used in [this demonstration](https://github.com/grrob015/osticket-settings), so if you've been following along, log into your Azure virtual machine and open osTicket! (Simply type `localhost/osTicket` into your browswer, as a refresher.)
 
 ## Accoutant's Laptop Breaks
