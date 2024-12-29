@@ -93,5 +93,55 @@ She will also post an internal reply that lets John know that this is his new pr
 
 ![14  janes paper trail](https://github.com/user-attachments/assets/90a84af1-4fd5-49d0-b22f-1d60005e1636)
 
+Let's log in as John and take a look at his side of things. In our demonstration, only one user-created ticket is open and active at a time, so it's easy for John to see the priority level and who the ticket is assigned to on his open ticket menu. But if this was a real business with potentially hundreds of employees, there would be a lot more tickets, and multiple pages of them. Rather than looking through all the pages of tickets and being overwhelmed by the information, let's let osTicket do the work and sort by tickets that are assigned to us (John). Go to Tickets -> My Tickets -> Assigned to Me and you should find the printer ticket waiting for you:
 
+![15  johns assigned tickets](https://github.com/user-attachments/assets/8db96207-3668-4488-8fb6-793e231e5a20)
 
+💡 In osTicket, if the ticket name is in bold, it hasn't been opened yet. John clicks the ticket and sees all of the work Jane has done on the ticket. John posts a public reply that says that he'll be down to the Engineering floor shortly to take a look. Notice the different color headers for internal notes and public replies that the end user can see. 
+
+![16  johns public reply](https://github.com/user-attachments/assets/9f41fc27-9af9-4157-84a8-a81a6a4b1894)
+
+John goes down to try and fix the printer, but runs into a networking problem he hasn't seen before on it. He posts a reply to the ticket to let Conagher know that more work needs to be done on the ticket and that there will be delays.
+
+![17  john cant fix the printer](https://github.com/user-attachments/assets/36a102bd-69c7-40cf-84f5-9522445a90c7)
+
+Now, let's log in as Jane, since the ball's in her court now. She creates a new team (in the **Admin Panel -> Agents -> Teams**) called "(Temp) Printer Training" and makes herself the team leader, assigning John to the team as well. (⚠️ in osTicket, an agent must be a memeber of a team before they can be given the role of leader. Add John and Jane in the "Members" section of the team creation menu before assigning a leader.) She then assigns the ticket to the team.
+
+![18  janes new team](https://github.com/user-attachments/assets/0c4a51a9-cbbd-49d3-bb27-a9e4ce67208c)
+
+Jane works with John and they fix the printer's networking problem. Jane replies to Conagher and closes the ticket.
+
+![19  case closed for jane](https://github.com/user-attachments/assets/16220f5b-1cc0-48e2-ab8e-b69c4a9ed5dc)
+
+Delete or archive the temporary printer team, and get ready to move on to our next example ticket!
+
+## John forgets his password
+<!-- I said it was only going to get tougher for John -->
+
+Since John is new, he unfortunately has forgotten his password just a few days into his new job. Open a new ticket for your helpdesk and fill it out as shown below. Make sure "Account Trouble" is the help topic selected so the ticket is automatcically assigned to the "Admins" department.
+
+![20  john forgets his password](https://github.com/user-attachments/assets/fe4b3c7e-7def-4b25-904e-223fbb2e0ec9)
+
+Even though John forgot his password, let's log in as John to see if we configured our permissions correctly. He shouldn't be able to see the ticket.
+
+![21  john can't see the ticket](https://github.com/user-attachments/assets/2ef71dec-94c9-4110-914d-d1ea586acdf7)
+
+So far so good. Now let's log in as Jane and see if she can see it, since she's in the "Admins" department.
+
+![22  jane can see it](https://github.com/user-attachments/assets/bb479a5b-8b48-461b-9611-d9e79a01966b)
+
+She can! Jane goes to the **Admin Panel -> Agents -> Agents** and then clicks on John Doe. In the "Account" section of his user profile, Jane can use the "Set Password" button to get John back into his account. In a real business scenario, leaving the "Send the agent a password reset email" box ticked and pressing "Update" would be enough, but since we have fake emails and fake employees, I'll have Jane take a different approach. She'll set a new temporary password for John, and he'll need to choose one at his next login. **Leave the "Require password change at next login" box ticked**.
+
+![23  password example](https://github.com/user-attachments/assets/a54bf3e7-93b7-4ba1-8ce2-7c3d4441183f)
+
+Jane then posts a reply to John that's visible in his email telling him his new temporary password, closing the ticket afterwards.
+
+![24  johns new password](https://github.com/user-attachments/assets/e9481938-2ad5-4332-8037-23640602cc28)
+
+Let's log in as John to complete the user side of the ticket. Sign out from Jane's account and have John's temporary password handy to log in with.
+
+![25  john sets a new password](https://github.com/user-attachments/assets/5ae2b944-a041-4f71-b77a-c32739a50511)
+
+Set John's new password, and you're done! You have seen three tickets all exploring the different parts of osTicket and what different permission levels and departments all working together at the same helpdesk look like in action.
+
+This is the final part to my osTicket demonstration. For more about osTicket, visit [official osTicket documentation](https://docs.osticket.com/en/latest/) (it's where I got lots of good information).
